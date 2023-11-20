@@ -1,1 +1,181 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #2E4374;
+}
+.cabecera{
+    background-color: #4B527E;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.cabecera h1{
+    font-family: 'Times New Roman';
+    font-size: 32px ;
+    color: #7C81AD;
+}
+.cabecera h1.name{
+    position: relative;
+    right: 20px;
+    float: right;
+}
+.cabecera h1.parcial{
+    position: relative;
+    left: 20px;
+    float: left;
+}
+
+.lab{
+    background-color: #355c7d;
+    border-radius: 20px;
+    color: #E5C3A6;
+    font-size: 13px;
+    width: 100%;
+}
+.lab h2{
+    color: #E5C3A6;
+    text-align: center;
+    position: relative;
+    top: 8px;
+    font-family: cursive;
+    font-size: 25px;
+}
+.lab pre{
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+}
+
+.footer{
+    background-color: #355c7d;
+    border-radius: 20px;
+    color: #E5C3A6;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer table{
+    width: 600px;
+    text-align: center;
+}
+.footer a{
+    display: inline-block; 
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    text-align: center; 
+    line-height: 30px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    margin: 5px; 
+}
+.cisco{
+    background-color: greenyellow;
+}
+.yt{
+    background-color: red;
+}
+.w3s{
+    background-color: green;
+}
+
+.boton-menu {
+    background-color: #355c7d;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+.lista-menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+.lista-menu li {
+    padding: 10px;
+}
+.lista-menu li a {
+    text-decoration: none;
+    color: #87c7ff;
+}
+.menu:hover .lista-menu {
+    display: block;
+}
+.menu .lista-menu {
+    display: none;
+}
+
+
+.container-form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.input {
+    width: 45%;
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.nom {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+.enviar, .edit {
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.enviar:hover, .edit:hover {
+    background-color: #45a049;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.elim {
+    padding: 8px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.elim:hover {
+    background-color: #d32f2f;
+}
