@@ -16,7 +16,7 @@ export class LoginComponent {
 
   login(){
     this.authService.loginwithcredentials(this.email, this.pass).then(res => {
-      this.router.navigate(["/"]);
+      this.router.navigate(["/home"]);
     }).catch(error => {
       console.log(error)
     });
@@ -24,7 +24,7 @@ export class LoginComponent {
 
   loginGoogle(){
     this.authService.loginwithgoogle().then(res => {
-      this.router.navigate(["/"]);
+      this.router.navigate(["/home"]);
     }).catch(error => {
       console.log(error)
     });

@@ -14,6 +14,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
 import { LabsComponent } from './pages/labs/labs.component';
 import { HeaderComponent } from './commons/header/header.component';
+import { Home2Component } from './pages/home2/home2.component';
 
 const config = {
   apiKey: "AIzaSyC6NRJ5eQYw4-6nNRvGG2Xv-iJAmNmR6co",
@@ -33,7 +34,8 @@ const config = {
     RegisterComponent,
     LoginComponent,
     LabsComponent,
-    HeaderComponent
+    HeaderComponent,
+    Home2Component
   ],
   imports: [
     BrowserModule,

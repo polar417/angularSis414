@@ -5,9 +5,11 @@ import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
 import { LabsComponent } from './pages/labs/labs.component';
 import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
+import { Home2Component } from './pages/home2/home2.component';
 
 const routes: Routes = [
-  {path: "", component:HomeComponent},
+  {path: "home", component:HomeComponent, ...canActivate(() => redirectUnauthorizedTo(["/"]))},
+  {path: "", component:Home2Component},
   {path: "register", component:RegisterComponent},
   {path: "login", component:LoginComponent},
   {path: "labs", component:LabsComponent, ...canActivate(() => redirectUnauthorizedTo(["/"]))},
