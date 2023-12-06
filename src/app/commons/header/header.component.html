@@ -1,0 +1,17 @@
+<div>
+<ul>
+    <li><a routerLink="/">Inicio</a></li>
+    <li><a routerLink="/labs">Labs</a></li>
+    <li><a routerLink="/otros">Otros</a></li>
+    <li>
+        <a href="/" (click)="Salir()" *ngIf="user!=null">Salir</a>
+    </li>
+    <li style="float:right">
+        <a class="active" routerLink="/login">Login <span *ngIf="user!=null">{{user}}</span></a>
+    </li>
+    <li style="float:right">
+        <a class="active" routerLink="/register"  *ngIf="user==null">Register</a>
+    </li>
+  </ul>
+</div>  
+  

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class LanguagesService {
 
-  url: string = "https://apirest-a36f8-default-rtdb.firebaseio.com/";
+  url: string = "https://nnfe-e4b16-default-rtdb.firebaseio.com/";
 
   constructor(private http: HttpClient) { }
 

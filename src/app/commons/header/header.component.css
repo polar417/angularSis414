@@ -1,0 +1,62 @@
+/* styles.css */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3498db; /* Azul principal */
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #2980b9; /* Azul más oscuro al pasar el ratón sobre un enlace */
+  }
+  
+  li a.active {
+    background-color: #1f618d; /* Azul más oscuro para el enlace activo */
+  }
+  
+  li a span {
+    color: #007BFF; /* Azul más claro para el nombre de usuario */
+  }
+  
+  li a.logout {
+    color: #e74c3c; /* Rojo para el enlace de salida */
+  }
+  
+  li a.logout:hover {
+    background-color: #c0392b; /* Rojo más oscuro al pasar el ratón sobre el enlace de salida */
+  }
+  
+  li a.register {
+    color: #3498db; /* Azul principal para el enlace de registro */
+  }
+  
+  li a.register:hover {
+    background-color: #2980b9; /* Azul más oscuro al pasar el ratón sobre el enlace de registro */
+  }
+  
+  li a.login {
+    color: #3498db; /* Azul principal para el enlace de inicio de sesión */
+  }
+  
+  li a.login:hover {
+    background-color: #2980b9; /* Azul más oscuro al pasar el ratón sobre el enlace de inicio de sesión */
+  }
+  
+  li a.active, li a.logout, li a.register, li a.login {
+    float: right;
+  }
+  
