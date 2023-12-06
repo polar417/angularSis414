@@ -12,17 +12,13 @@ export class RegisterComponent {
   email:string = "";
   pass:string = "";
 
-  nombre1:string = "";
-  apellido:string ="";
-
   constructor(private authService: AuthService, private router: Router){}
 
   guardar(){
-    this.authService.register(this.email, this.pass, this.nombre1, this.apellido).then(res =>{
+    this.authService.register(this.email, this.pass).then(res =>{
       this.router.navigate(["/"]);
     }).catch(error => {
       console.log(Error)
     })
   }
-  
 }

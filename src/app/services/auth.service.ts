@@ -24,7 +24,7 @@ export class AuthService {
     return this.auth.currentUser;
   }
 
-  register(email:string, pass:string, nombre1:string, apellido:string){
+  register(email:string, pass:string){
     return createUserWithEmailAndPassword(this.auth, email, pass);
   }
   
